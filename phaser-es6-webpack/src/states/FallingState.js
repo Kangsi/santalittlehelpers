@@ -19,11 +19,11 @@ export default class extends Phaser.State {
     Present3.anchor.set(0.5);
     Present4.anchor.set(0.5);
     Present5.anchor.set(0.5);
-    game.add.tween(Present1).to({ y: Config.height - Present1.centerY }, 2000, null, true);
-    game.add.tween(Present2).to({ y: Config.height - Present2.centerY }, 2000, null, true);
-    game.add.tween(Present3).to({ y: Config.height - Present3.centerY }, 2000, null, true);
-    game.add.tween(Present4).to({ y: Config.height - Present4.centerY }, 2000, null, true);
-    game.add.tween(Present5).to({ y: Config.height - Present5.centerY }, 2000, null, true);
+    game.add.tween(Present1).to({ y: Config.height - Present1.centerY, angle: Present1.angle + Math.random() * 360 }, Math.random() * 1000 + 1000, null, true, 0);
+    game.add.tween(Present2).to({ y: Config.height - Present2.centerY, angle: Present1.angle + Math.random() * 360 }, Math.random() * 1000 + 1000, null, true, 400);
+    game.add.tween(Present3).to({ y: Config.height - Present3.centerY, angle: Present1.angle + Math.random() * 360 }, Math.random() * 1000 + 1000, null, true, 800);
+    game.add.tween(Present4).to({ y: Config.height - Present4.centerY, angle: Present1.angle + Math.random() * 360 }, Math.random() * 1000 + 1000, null, true, 600);
+    game.add.tween(Present5).to({ y: Config.height - Present5.centerY, angle: Present1.angle + Math.random() * 360 }, Math.random() * 1000 + 1000, null, true, 200);
   }
   render () {}
 }
