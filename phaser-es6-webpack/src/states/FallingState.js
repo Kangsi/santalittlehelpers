@@ -11,7 +11,7 @@ export default class extends Phaser.State {
     this.game.add.existing(background);
     this.sprite = game.add.sprite(game.world.centerX, -200, 'present-1');
     this.sprite.anchor.set(0.5);
-    game.add.tween(this.sprite).to({ y: Config.height - this.sprite.centerY }, 4000, null, true)
+    game.add.tween(this.sprite).to({ y: Config.height - this.sprite.centerY }, 2000, null, true)
   }
   render () {}
 }
