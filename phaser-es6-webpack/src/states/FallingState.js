@@ -6,7 +6,7 @@ export default class extends Phaser.State {
   }
   preload () {}
   create () {
-    const background = new Phaser.Sprite(game, 0, 0, 'bg');
+    const background = new Phaser.Sprite(game, 0, 0, 'chimney');
     this.game.add.existing(background);
     this.sprite = game.add.sprite(game.world.centerX, -200, 'present-1');
     this.sprite.anchor.set(0.5);
