@@ -12,7 +12,7 @@ export default class extends Phaser.State {
       font: '40px Bangers',
       fill: '#77BFA3',
       smoothed: false
-    })
+    });
 
     banner.padding.set(10, 16)
     banner.anchor.setTo(0.5)
