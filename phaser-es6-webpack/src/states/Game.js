@@ -28,6 +28,6 @@ export default class extends Phaser.State {
   }
 
   loadNextScene () {
-    this.state.start('FallingState')
+    this.state.start('FallingState');
   }
 }
