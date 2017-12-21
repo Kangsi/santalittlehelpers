@@ -14,7 +14,8 @@
     "comma-dangle": 0
   },
   "globals": {
-    "phaser": true
+    "phaser": true,
+    "game": false
   },
   "settings": {
     "import/core-modules": [ "phaser", "pixi", "p2" ]
