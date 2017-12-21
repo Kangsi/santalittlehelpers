@@ -14,7 +14,8 @@ export default class extends Phaser.State {
     const background = new Phaser.Sprite(game, 0, 0, 'bg');
     this.game.add.existing(background);
 
-    this.gifts = new Gifts(this.game)
+    this.gifts = new Gifts(this.game, 640, 720, 640, 360)
+
   }
 
   render () {
