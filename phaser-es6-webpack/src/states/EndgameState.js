@@ -12,12 +12,14 @@ export default class extends Phaser.State {
   }
 
   create () {
-    const background = new Phaser.Sprite(game, 0, 0, 'chimney')
-    //this.game.add.existing(background)
+    const background = new Phaser.Sprite(game, 0, 0, 'livingroom')
+    this.game.add.existing(background)
 
     this.bouncingGifts = new BouncingGifts(this.game, Config.width / 2, 0)
+
+    const fireplace = new Phaser.Sprite(game, 0, 0, 'fireplace')
+    this.game.add.existing(fireplace)
   }
 
   render () {}
-
 }

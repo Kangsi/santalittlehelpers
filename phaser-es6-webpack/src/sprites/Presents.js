@@ -1,0 +1,1 @@
+export default {  names: [    { name: 'present-1' },    { name: 'present-2' },    { name: 'present-3' },    { name: 'present-4' },    { name: 'present-5' },  ]}
