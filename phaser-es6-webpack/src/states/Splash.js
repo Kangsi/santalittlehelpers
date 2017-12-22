@@ -34,6 +34,8 @@ export default class extends Phaser.State {
     this.load.audio('falling', 'assets/audio/falling.ogg');
     this.load.audio('box', 'assets/audio/box.ogg');
     this.load.audio('santa', 'assets/audio/santa.ogg');
+    this.load.audio('merryxmas', 'assets/audio/merryxmas.ogg');
+    this.load.audio('squeeze', 'assets/audio/squeeze.ogg');
 
     this.load.onLoadComplete.add(() => {
       this.loadNextState();
@@ -41,7 +43,7 @@ export default class extends Phaser.State {
   }
 
   loadNextState () {
-    this.state.start('EndgameState')
+    this.state.start('Game')
     this.bgmusic = game.add.audio('bgmusic');
     this.bgmusic.volume = 0.5
     this.bgmusic.play();
