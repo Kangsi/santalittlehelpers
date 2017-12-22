@@ -17,10 +17,11 @@ export default class extends Phaser.State {
   preload () {
     this.game.nextScene.add(() => {
       this.loadNextScene();
-    })
+    });
   }
 
   create () {
+
     const background = new Phaser.Sprite(game, 0, 0, 'bg');
     this.game.add.existing(background);
 

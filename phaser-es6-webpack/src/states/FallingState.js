@@ -14,7 +14,6 @@ export default class extends Phaser.State {
     var falling;
     falling = game.add.audio('falling');
     falling.volume = 0.1;
-    
     falling.play();
 
     var Present1 = game.add.sprite(Config.width / 2 - 100, -200, Presents.names[0].name);
@@ -35,6 +34,7 @@ export default class extends Phaser.State {
 
     setTimeout(this.loadNextScene.bind(this), 2500)
   }
+
   render () {}
 
   loadNextScene () {
