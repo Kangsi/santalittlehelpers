@@ -32,9 +32,13 @@ export default class extends Phaser.State {
     this.load.image('chimney', 'assets/images/chimney.jpg');
     game.load.audio('falling', 'assets/audio/falling.ogg');
     game.load.audio('box', 'assets/audio/box.ogg');
+    game.load.audio('santa', 'assets/audio/santa.ogg');
+
   }
 
   create () {
-    this.state.start('Game')
+    this.state.start('Game');
+    this.bgmusic = game.add.audio('bgmusic');
+    this.bgmusic.play();
   }
 }
