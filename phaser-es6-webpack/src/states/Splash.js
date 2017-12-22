@@ -13,6 +13,7 @@ export default class extends Phaser.State {
     //
     // load your assets
     //
+    this.load.image('snowflake', 'assets/images/snowflake.png')
     this.load.image('bg', 'assets/images/background.jpg');
     this.load.image('fireplace', 'assets/images/fireplace.png');
     this.load.image('livingroom', 'assets/images/livingroom.jpg');
