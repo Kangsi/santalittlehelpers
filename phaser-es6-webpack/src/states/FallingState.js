@@ -11,6 +11,10 @@ export default class extends Phaser.State {
     const background = new Phaser.Sprite(game, 0, 0, 'chimney');
     this.game.add.existing(background);
 
+    var falling;
+    falling = game.add.audio('falling');
+    falling.play();
+
     var Present1 = game.add.sprite(Config.width / 2 - 100, -200, Presents.names[0].name);
     var Present2 = game.add.sprite(Config.width / 2, -200, Presents.names[1].name);
     var Present3 = game.add.sprite(Config.width / 2 + 100, -200, Presents.names[2].name);

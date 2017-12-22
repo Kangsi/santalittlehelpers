@@ -29,7 +29,9 @@ export default class extends Phaser.State {
     this.load.image('present-4', 'assets/images/present-4.png');
     this.load.image('present-5', 'assets/images/present-5.png');
     this.load.image('house', 'assets/images/house.png')
-    this.load.image('chimney', 'assets/images/chimney.jpg')
+    this.load.image('chimney', 'assets/images/chimney.jpg');
+    game.load.audio('falling', 'assets/audio/falling.ogg');
+    game.load.audio('box', 'assets/audio/box.ogg');
   }
 
   create () {
