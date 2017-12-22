@@ -13,6 +13,12 @@ export default class extends Phaser.State {
     //
     // load your assets
     //
+    this.load.image('sleigh', 'assets/images/sleigh.png')
+    this.load.image('arrow', 'assets/images/arrow.png')
+    this.load.image('santa', 'assets/images/santa.png')
+    this.load.image('santa-clicked', 'assets/images/santa-clicked.png')
+    this.load.image('merry-christmas', 'assets/images/merry-christmas.png')
+    this.load.image('shiny', 'assets/images/shiny.png')
     this.load.image('snowflake', 'assets/images/snowflake.png')
     this.load.image('bg', 'assets/images/background.jpg');
     this.load.image('fireplace', 'assets/images/fireplace.png');

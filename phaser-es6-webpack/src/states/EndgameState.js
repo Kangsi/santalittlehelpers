@@ -1,5 +1,7 @@
 import Phaser from 'phaser'
 import BouncingGifts from '../sprites/BouncingGifts';
+import MerryChristmas from '../sprites/MerryChristmas';
+
 import Config from '../config'
 
 export default class extends Phaser.State {
@@ -17,7 +19,9 @@ export default class extends Phaser.State {
 
     this.bouncingGifts = new BouncingGifts(this.game, Config.width / 2, 0)
 
-
+    setTimeout(() => {
+      this.merryChristmasCard = new MerryChristmas(this.game);
+    }, 6000)
   }
 
   render () {}

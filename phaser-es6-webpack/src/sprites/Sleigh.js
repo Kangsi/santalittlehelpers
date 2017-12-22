@@ -1,0 +1,1 @@
+import Phaser from 'phaser';export default class Sleigh extends Phaser.Sprite {  constructor (game, x, y, asset) {    super(game, x, y, asset)    this.game = game;    this.anchor.setTo(1, 0.5);    this.game.add.tween(this)      .to({ x: 4000 }, 10000, null, true).loop(true)  }}
