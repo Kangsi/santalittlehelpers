@@ -13,6 +13,9 @@ export default class extends Phaser.State {
     //
     // load your assets
     //
+    this.load.image('particle-star', 'assets/images/particle-star.png')
+    this.load.image('particle-cloud', 'assets/images/particle-cloud.png')
+    this.load.image('credits', 'assets/images/credits.png')
     this.load.image('icicle', 'assets/images/icicle.png')
     this.load.image('sleigh', 'assets/images/sleigh.png')
     this.load.image('arrow', 'assets/images/arrow.png')
@@ -23,7 +26,7 @@ export default class extends Phaser.State {
     this.load.image('snowflake', 'assets/images/snowflake.png')
     this.load.image('bg', 'assets/images/background.jpg');
     this.load.image('fireplace', 'assets/images/fireplace.png');
-    this.load.image('livingroom', 'assets/images/livingroom.jpg');
+    this.load.image('livingroom', 'assets/images/livingroom.png');
     this.load.image('present-1', 'assets/images/present-1.png');
     this.load.image('present-2', 'assets/images/present-2.png');
     this.load.image('present-3', 'assets/images/present-3.png');
@@ -41,9 +44,10 @@ export default class extends Phaser.State {
   }
 
   loadNextState () {
-    this.state.start('EndgameState')
+    this.state.start('Game')
     this.bgmusic = game.add.audio('bgmusic');
-    this.bgmusic.volume = 0.5
+    this.bgmusic.volume = 0.5;
+    this.bgmusic.loop = true;
     this.bgmusic.play();
   }
 }

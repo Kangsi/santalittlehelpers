@@ -6,6 +6,7 @@ import Santa from '../sprites/Santa';
 import Sleigh from '../sprites/Sleigh';
 import Icicle from '../sprites/Icicle';
 import Arrow from '../sprites/Arrow';
+import Particles from '../sprites/Particles';
 
 export default class extends Phaser.State {
   init () {
@@ -13,6 +14,7 @@ export default class extends Phaser.State {
 
     this.game.nextScene = new Phaser.Signal();
     this.game.firstClick = new Phaser.Signal();
+    this.game.doParticles = new Phaser.Signal();
   }
   preload () {
     this.game.nextScene.add(() => {
@@ -49,6 +51,8 @@ export default class extends Phaser.State {
 
     this.santa = new Santa(this.game, 1000, 550, 'santa')
     this.game.add.existing(this.santa)
+
+    this.particles = new Particles(this.game);
 
     this.snowflakeSpawner2 = new SnowflakeSpawner(this.game, 100, 0.5);
 
