@@ -17,8 +17,7 @@ export default class extends Phaser.State {
 
     this.bouncingGifts = new BouncingGifts(this.game, Config.width / 2, 0)
 
-    const fireplace = new Phaser.Sprite(game, 0, 0, 'fireplace')
-    this.game.add.existing(fireplace)
+
   }
 
   render () {}
