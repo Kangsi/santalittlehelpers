@@ -31,6 +31,8 @@ export default class extends Phaser.State {
     this.load.image('present-5', 'assets/images/present-5.png');
     this.load.image('house', 'assets/images/house.png')
     this.load.image('chimney', 'assets/images/chimney.jpg')
+    this.load.audio('falling', 'assets/audio/falling.ogg');
+    this.load.audio('box', 'assets/audio/box.ogg');
 
     this.load.onLoadComplete.add(() => {
       this.loadNextState();
